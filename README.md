@@ -74,7 +74,7 @@ CREATE TABLE zepto (
 ```sql
    \copy zepto(category,name,mrp,discountPercent,availableQuantity,
             discountedSellingPrice,weightInGms,outOfStock,quantity)
-  FROM 'data/zepto_v2.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',', QUOTE '"', ENCODING 'UTF8');
+  FROM 'data/zepto.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',', QUOTE '"', ENCODING 'UTF8');
 ```
 - Faced encoding issues (UTF-8 error), which were fixed by saving the CSV file using CSV UTF-8 format.
 
